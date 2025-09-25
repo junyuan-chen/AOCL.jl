@@ -1,0 +1,22 @@
+name = "AOCL"
+uuid = "73d76e3c-1696-4126-b4f7-7918986086d2"
+version = "0.1.0"
+authors = ["Junyuan Chen <norman.chen.git@gmail.com>"]
+
+[deps]
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+
+[sources]
+AOCL_jll = {url = "https://github.com/amd/AOCL_jll.jl"}
+
+[compat]
+julia = "1.8"
+
+[extras]
+AOCL_jll = "b124843c-0c82-53c8-91a7-62bfdd90e290"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["AOCL_jll", "Random", "Test"]
